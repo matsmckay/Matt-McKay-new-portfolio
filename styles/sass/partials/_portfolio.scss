@@ -4,23 +4,27 @@
     padding: 2rem 0;
     text-align: center;
 }
-
-
     .portfolio-item{
         border-radius: 15px;
-        .p1-image{
+        display: flex;
+        gap: 50px;
+        margin-bottom: 200px;
+        align-items: center;
+        .project-image{
             position: relative;
+            width: 100%;
             img{
-                width: 100%;
-                height: 300px;
+                max-width: 100%;
+                display: block;
                 object-fit: cover;
                 border-radius: 15px;
-                // background-color: variables.$secondary;
+                object-position: center;
+                filter: grayscale(0)
             }
             .hover-items{
                 width: 100%;
                 height: 100%;
-                background-color: variables.$secondary;
+                background-color: variables.$tertiary;
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -40,7 +44,7 @@
             }
         }    
     }
-       
+
 .icons{
     display: flex;
     justify-content: center;
@@ -70,10 +74,15 @@
     }
 }
         
-    
-
-
 .portfolio-item:hover .hover-items{
-    opacity: 1;
+    opacity: .6;
     transform: scale(1);
+}
+
+.text-container{
+    width: 100%;
+    h3{
+        border-bottom: solid 4px variables.$tertiary;
+        display: inline-block;
+    }
 }
