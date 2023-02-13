@@ -843,25 +843,20 @@ section {
   text-align: center;
 }
 
-.portfolios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin-top: 3rem;
-}
-.portfolios .portfolio-item {
-  position: relative;
+.portfolio-item {
   border-radius: 15px;
 }
-.portfolios .portfolio-item img {
+.portfolio-item .p1-image {
+  position: relative;
+}
+.portfolio-item .p1-image img {
   width: 100%;
   height: 300px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
-  background-color: #2292A4;
 }
-.portfolios .portfolio-item .hover-items {
+.portfolio-item .p1-image .hover-items {
   width: 100%;
   height: 100%;
   background-color: #2292A4;
@@ -888,12 +883,13 @@ section {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-items h3 {
+.portfolio-item .p1-image .hover-items h3 {
   font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 1.5rem;
 }
-.portfolios .portfolio-item .hover-items .icons {
+
+.icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,7 +900,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
-.portfolios .portfolio-item .hover-items .icons .icon {
+.icons .icon {
   background-color: #191d2b;
   border-radius: 50%;
   width: 50px;
@@ -923,15 +919,15 @@ section {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-items .icons .icon i {
+.icons .icon i {
   font-size: 1.5rem;
   color: #ffffff;
   margin: 0 1rem;
 }
-.portfolios .portfolio-item .hover-items .icons .icon:hover {
+.icons .icon:hover {
   background-color: #ffffff;
 }
-.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+.icons .icon:hover i {
   color: #191d2b;
 }
 

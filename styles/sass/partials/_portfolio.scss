@@ -5,72 +5,73 @@
     text-align: center;
 }
 
-.portfolios{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    margin-top: 3rem;
+
     .portfolio-item{
-        position: relative;
         border-radius: 15px;
-        img{
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
-            border-radius: 15px;
-            background-color: variables.$secondary;
-        }
-        .hover-items{
-            width: 100%;
-            height: 100%;
-            background-color: variables.$secondary;
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-radius: 15px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            opacity: 0;
-            transform: scale(0);
-            transition: all .4s ease-in-out;   
-            h3{
-                font-size: 1.5rem;
-                color: variables.$white;
-                margin-bottom: 1.5rem;
+        .p1-image{
+            position: relative;
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 15px;
+                // background-color: variables.$secondary;
             }
-            .icons{
+            .hover-items{
+                width: 100%;
+                height: 100%;
+                background-color: variables.$secondary;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 15px; 
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .icon{
-                    background-color: variables.$primary;
-                    border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 1rem;
-                    cursor: pointer;
-                    transition: all .4s ease-in-out;
-                    i{
-                        font-size: 1.5rem;
-                        color: variables.$white;
-                        margin: 0 1rem;
-                    }
-                    &:hover{
-                        background-color: variables.$white;
-                        i{
-                            color: variables.$primary;
-                        }
-                    }
+                flex-direction: column;
+                opacity: 0;
+                transform: scale(0);
+                transition: all .4s ease-in-out;   
+                h3{
+                    font-size: 1.5rem;
+                    color: variables.$white;
+                    margin-bottom: 1.5rem;
                 }
+            }
+        }    
+    }
+       
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+        background-color: variables.$primary;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1rem;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        i{
+            font-size: 1.5rem;
+            color: variables.$white;
+            margin: 0 1rem;
+        }
+        &:hover{
+            background-color: variables.$white;
+            i{
+                color: variables.$primary;
             }
         }
     }
 }
+        
+    
+
 
 .portfolio-item:hover .hover-items{
     opacity: 1;
