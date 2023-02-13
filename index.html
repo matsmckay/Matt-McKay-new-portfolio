@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt McKay's Portfolio Site!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="./assets/MattMcKayProfilePhoto2022.jpeg" alt="Profile photo of Matt McKay">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Matt McKay.</span> A Toronto-Based Web Developer
+                </h1>
+                <p>Front end developer based in Toronto specializing in HTML, CSS, JAVASCRIPT and REACT. After 15 years
+                    running my own construction company, I have decided to exchange my tool belt for a keyboard to build
+                    websites instead of homes. Looking to take my experience in the trades to another level as a
+                    developer.</p>
+                <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About Me</h4>
+                    <p>As a recent graduate of Juno College’s Web Development Bootcamp, a three-month intensive
+                        fast-paced program focused on
+                        front-end development, I definitely possess those qualities. While attending Juno, I created
+                        multiple projects, either
+                        independently, in paired programming, and as part of a group with the main focus centred on
+                        building functional,
+                        user-friendly applications, using best practices with accessible, clean and responsive code. I
+                        used several different
+                        technologies including React, Firebase, JavaScript, and RESTful APIs, in addition to source
+                        control and deployment using
+                        Git, GitHub and Netlify. My skillset continues to expand and be refined with TypeScript and
+                        Python. To see some of the
+                        works I have created, I welcome you to check out my <a
+                            href="https://github.com/matsmckay">GitHub repository</a>
+                    </p>
+                    <p> On top of my technical background, I have previous experience as a general contractor both as an
+                        apprentice and owner.
+                        In this profession, I excelled in building a rapport with my diverse group of clients and
+                        coworkers, communicating,
+                        prioritizing and problem solving effectively with them in fast-paced,
+                        team environments. Every project I took on, either in a group or solo, allowed me to embrace its
+                        own unique set of
+                        challenges, which I always took in as an opportunity to learn, grow and improve my product. I
+                        get the same feeling when
+                        creating a successful web application and witnessing its growth.</p>
+                    <div class="btn-con">
+                        <a href="" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">560+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 blogs" id="blogs"></section>
+        <section class="section sec5 contact" id="contact"></section>
+    </main>
+
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="control control-2" data-id="about">
+            <i class="fa-sharp fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3 " data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control control-4 " data-id="blogs">
+            <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="control control-5 " data-id="contact">
+            <i class="fa-solid fa-envelope-open"></i>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

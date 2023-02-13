@@ -1,0 +1,42 @@
+@use "./variables";
+
+/* Controls */
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-50%);
+
+    .active-btn {
+        background-color: variables.$secondary !important;
+        transition: all 0.4s ease-in-out;
+
+        i {
+            color: variables.$white !important;
+        }
+    }
+
+    .control {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: variables.$grey-4;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.7rem 0;
+        box-shadow: variables.$box-shadow-1;
+
+        i {
+            font-size: 1.2rem;
+            color: variables.$grey-2;
+            pointer-events: none;
+        }
+    }
+}

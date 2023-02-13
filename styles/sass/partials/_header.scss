@@ -1,0 +1,70 @@
+@use "./variables";
+
+header {
+    height: 100vh;
+    color: variables.$white;
+    overflow: hidden;
+}
+
+// Header-content
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+
+    .left-header {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .h-shape {
+            transition: all .4s ease-in-out;
+            width: 65%;
+            height: 100%;
+            background-color: variables.$secondary;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            clip-path: polygon(0 0, 62% 0, 43% 100%, 0% 100%);
+        }
+
+        .image {
+            border-radius: variables.$br-sm-2;
+            height: 90%;
+            width: 68%;
+            margin-left: 4rem;
+            background-color: variables.$black;
+            transition: all .4s ease-in-out;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .4s ease-in-out;
+                filter: grayscale(100%);
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+    .right-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18rem;
+
+        .name {
+            font-size: 3rem;
+
+            span {
+                color: variables.$secondary;
+            }
+        }
+        p {
+            margin: 1.5rem 0;
+            line-height: 2rem;
+            ;
+        }
+    }
+}
