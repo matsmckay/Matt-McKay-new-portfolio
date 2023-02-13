@@ -1,1 +1,71 @@
 @use "./variables";
+
+html {
+    font-size: 125%;
+}
+
+// h1 {
+//     font-family: 'IM Fell English', serif;
+//     font-size: clamp(1.5rem, 6vw, 3.5rem);
+//     text-transform: uppercase;
+// }
+
+// h2 {
+//     font-family: 'IM Fell English', serif;
+//     font-size: clamp(1.2rem, 3vw, 2.25rem);
+//     text-transform: uppercase;
+//     color: variables.$secondary;
+
+// }
+
+// h3 {
+//     font-family: 'IM Fell English', serif;
+//     font-size: clamp(1.0rem, 3vw, 2.0rem);
+//     text-transform: uppercase;
+//     color: variables.$tertiary;
+//     letter-spacing: 1.3px;
+// }
+
+// i {
+//     font-size: 2rem;
+//     line-height: 1.6;
+//     letter-spacing: 1.5px;
+//     color: variables.$secondary;
+// }
+
+p {
+    // font-family: 'Roboto', sans-serif;
+    font-size: clamp(0.8rem, 0.9rem, 1.0rem);
+    letter-spacing: 1px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

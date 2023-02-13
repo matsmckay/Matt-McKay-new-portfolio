@@ -1,6 +1,12 @@
 @use "./variables";
 
 // Independent components
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .btn-con {
     display: flex;
     align-self: flex-start
