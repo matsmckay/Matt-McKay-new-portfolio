@@ -2,74 +2,53 @@
 
 // About
 
-.about-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.about-container, .about-skills{
     padding-top: 3.5rem;
-    padding-bottom: 5rem;
-
-    .right-about {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-
-        .about-item {
-            border: 1px solid variables.$grey-5;
-            border-radius: 5px;
-            transition: all .4s ease-in-out;
-            box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-            &:hover {
-                cursor: default;
-                transform: translateY(-5px);
-                border: 1px solid variables.$secondary;
-                box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-            }
-            .abt-text{
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                .large-text{
-                    font-size: 3rem;
-                    font-weight: 700;
-                    color: variables.$secondary;
-                }
-                .small-text{
-                    padding-left: 3rem;
-                    position: relative;
-                    text-transform: uppercase;
-                    font-size: 1.2rem;
-                    color: variables.$grey-1;
-                    letter-spacing: 2px;
-                    &::before{
-                        content:'';
-                        position: absolute;
-                        left: 0;
-                        top: 15px;
-                        width: 2rem;
-                        height: 2px;
-                        background-color: variables.$grey-5;
-                    }
-                }
-            }
-        }
-    }
-
-    .left-about{
-        padding-right: 5rem;
-        p{
-            line-height: 2rem;
-            padding: 1rem;
-            color: variables.$grey-1;
-        }
-        h4{
-            font-size: 2rem;
-            text-transform: uppercase;
+    margin-top: 1.5rem;
+    .about-item {
+        border: 1px solid variables.$grey-5;
+        border-radius: 5px;
+        transition: all .4s ease-in-out;
+        box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+        &:hover {
+            cursor: default;
+            transform: translateY(-5px);
+            border: 1px solid variables.$secondary;
+            box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
         }
     }
 }
 
-.about-stats{
+.about-info {
+    display: flex;
+    flex-direction: column;
+    p {
+            line-height: 2rem;
+            padding: 1rem;
+            color: variables.$grey-1;
+    }
+    h4 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 10px;
+    }
+    .btn-con{
+        align-self: center;
+        padding-bottom: 10px;
+    }
+}
+
+
+.left-about{
+    padding-right: 5rem;
+    
+}
+
+
+.about-skills{
     padding-bottom: 4rem;
+    
     .progress-bars{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -128,10 +107,11 @@
 }
 
 .stat-title{
+    font-size: 2rem;
     text-transform: uppercase;
-    font-size: 1.4rem;
     text-align: center;
-    padding: 3.5rem 0;
+    padding-top: 10px;
+    // padding: 3.5rem 0;
     position: relative;
     &::before{
         content: '';

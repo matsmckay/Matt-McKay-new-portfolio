@@ -625,18 +625,11 @@ section {
   pointer-events: none;
 }
 
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.about-container, .about-skills {
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  margin-top: 1.5rem;
 }
-.about-container .right-about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-.about-container .right-about .about-item {
+.about-container .about-item, .about-skills .about-item {
   border: 1px solid #12181b;
   border-radius: 5px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -644,7 +637,7 @@ section {
   -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.about-container .right-about .about-item:hover {
+.about-container .about-item:hover, .about-skills .about-item:hover {
   cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -652,8 +645,8 @@ section {
   -webkit-box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
           box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
-.about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
+
+.about-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,50 +655,36 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about-container .right-about .about-item .abt-text .large-text {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #2292A4;
-}
-.about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: #dbe1e8;
-  letter-spacing: 2px;
-}
-.about-container .right-about .about-item .abt-text .small-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15px;
-  width: 2rem;
-  height: 2px;
-  background-color: #12181b;
-}
-.about-container .left-about {
-  padding-right: 5rem;
-}
-.about-container .left-about p {
+.about-info p {
   line-height: 2rem;
   padding: 1rem;
   color: #dbe1e8;
 }
-.about-container .left-about h4 {
+.about-info h4 {
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+}
+.about-info .btn-con {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-bottom: 10px;
 }
 
-.about-stats {
+.left-about {
+  padding-right: 5rem;
+}
+
+.about-skills {
   padding-bottom: 4rem;
 }
-.about-stats .progress-bars {
+.about-skills .progress-bars {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
-.about-stats .progress-bars .progress-bar {
+.about-skills .progress-bars .progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,11 +693,11 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about-stats .progress-bars .progress-bar .prog-title {
+.about-skills .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 500;
 }
-.about-stats .progress-bars .progress-bar .progress-con {
+.about-skills .progress-bars .progress-bar .progress-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,17 +705,17 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+.about-skills .progress-bars .progress-bar .progress-con .prog-text {
   color: #b2becd;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress {
+.about-skills .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
   height: 0.45rem;
   background-color: #2a2e35;
   margin-left: 1rem;
   position: relative;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
+.about-skills .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -746,30 +725,30 @@ section {
   transition: all 0.4s ease-in-out;
   width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+.about-skills .progress-bars .progress-bar .progress-con .progress .html {
   width: 45%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+.about-skills .progress-bars .progress-bar .progress-con .progress .css {
   width: 46%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+.about-skills .progress-bars .progress-bar .progress-con .progress .javascript {
   width: 30%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+.about-skills .progress-bars .progress-bar .progress-con .progress .react {
   width: 25%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .restApi {
+.about-skills .progress-bars .progress-bar .progress-con .progress .restApi {
   width: 20%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .firebase {
+.about-skills .progress-bars .progress-bar .progress-con .progress .firebase {
   width: 10%;
 }
 
 .stat-title {
+  font-size: 2rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
   text-align: center;
-  padding: 3.5rem 0;
+  padding-top: 10px;
   position: relative;
 }
 .stat-title::before {

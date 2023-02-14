@@ -48,8 +48,8 @@
                 <h2>About <span>Me</span><span class="bg-text">My Skills</span></h2>
             </div>
             <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About Me</h4>
+                <div class="about-info about-item">
+                    <h4>About Me</h4>
                     <p>As a recent graduate of Juno College’s Web Development Bootcamp, a three-month intensive
                         fast-paced program focused on
                         front-end development, I definitely possess those qualities. While attending Juno, I created
@@ -72,90 +72,61 @@
                         </a>
                     </div>
                 </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">4+</p>
-                            <p class="small-text">Months of <br /> Experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">3+</p>
-                            <p class="small-text">Happy <br /> Clients</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">2+</p>
-                            <p class="small-text">Customer <br /> Reviews</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog text">45%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog text">46%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog text">30%</p>
-                            <div class="progress">
-                                <span class="javascript"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">react</p>
-                        <div class="progress-con">
-                            <p class="prog text">25%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">restful api</p>
-                        <div class="progress-con">
-                            <p class="prog text">20%</p>
-                            <div class="progress">
-                                <span class="restApi"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">firebase</p>
-                        <div class="progress-con">
-                            <p class="prog text">10%</p>
-                            <div class="progress">
-                                <span class="firebase"></span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="about-skills">
+                <div class="skills-about about-item">
+                    <h4 class="stat-title">My Skills</h4>
+                    <ul class="progress-bars">
+                        <li class="progress-bar">
+                            <i class="fa-brands fa-html5"></i>
+                            <p class="prog-title">html5</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p class="prog-title">css3</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-brands fa-square-js"></i>
+                            <p class="prog-title">javascript</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-brands fa-react"></i>
+                            <p class="prog-title">react</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                            <p class="prog-title">restful api</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="devicon-firebase-plain"></i>
+                            <p class="prog-title">firebase</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-brands fa-sass"></i>
+                            <p class="prog-title">sass</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="devicon-git-plain"></i>
+                            <p class="prog-title">git</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-solid fa-mobile-button"></i>
+                            <p class="prog-title">responsive web design</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-brands fa-github"></i>
+                            <p class="prog-title">Github</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-solid fa-person-through-window"></i>
+                            <p class="prog-title">Accessibility</p>
+                        </li>
+                        <li class="progress-bar">
+                            <i class="fa-solid fa-terminal"></i>
+                            <p class="prog-title">Terminal</p>
+                        </li>
+                    </ul>
+                    <!-- END .progress-bars -->
                 </div>
             </div>
             <h4 class="stat-title">My Timeline</h4>
@@ -199,7 +170,8 @@
             </p>
             <div class="portfolios">
                 <div class="portfolio-item project1">
-                    <div class="project-image p1-image">
+                    <div class="project-image p1-image" data-aos="flip-left" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <img src="./assets/Project-4-Portfolio-Img.png"
                             alt="Screenshot of 'What do you no?' quiz game home page" />
                         <!-- Add more photos of game -->
@@ -227,7 +199,7 @@
                         <!-- END .hover-items -->
                     </div>
                     <!-- END .project-image .p1-image -->
-                    <div class="text-container">
+                    <div class="text-container" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1000">
                         <div class="description">
                             <h3>Homonym Quiz Game</h3>
                             <p>Think you know your homonyms? This game might have you thinking otherwise. With ten new
@@ -251,7 +223,8 @@
                 </div>
                 <!-- END .portfolio-item project1 -->
                 <div class="portfolio-item project2">
-                    <div class="project-image p2-image">
+                    <div class="project-image p2-image" data-aos="flip-left" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <img src="./assets/Project-3-Portfolio-Img.png"
                             alt="Screenshot of 'Night at Rijks Museum' art search home page" />
                         <!-- Add more photos of game -->
@@ -276,7 +249,7 @@
                         <!-- END .hover-items -->
                     </div>
                     <!-- END .project-image .p2-image -->
-                    <div class="text-container">
+                    <div class="text-container" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1000">
                         <div class="description">
                             <h3>Rijks Museum Art Viewing</h3>
                             <p>In the mood to take in priceless art? Rijks this way! At this site, one can take
@@ -301,7 +274,8 @@
                 </div>
                 <!-- END .portfolio-item project2 -->
                 <div class="portfolio-item project3">
-                    <div class="project-image p3-image">
+                    <div class="project-image p3-image" data-aos="flip-left" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <img src="./assets/Project-2-Portfolio-Img.png"
                             alt="Screenshot of 'Horoscopes for you' home page" />
                         <!-- Add more photos of game -->
@@ -326,7 +300,7 @@
                         <!-- END .hover-items -->
                     </div>
                     <!-- END .project-image .p3-image -->
-                    <div class="text-container">
+                    <div class="text-container" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1000">
                         <div class="description">
                             <h3>Horoscopes 4 U!</h3>
                             <p>Come for the horoscopes, stay for the bonus options! Finding your fortune has never been
@@ -351,7 +325,8 @@
                 </div>
                 <!-- END .portfolio-item project3 -->
                 <div class="portfolio-item project4">
-                    <div class="project-image p4-image" data-aos="flip-left">
+                    <div class="project-image p4-image" data-aos="flip-left" data-aos-delay="100"
+                        data-aos-duration="1000">
                         <img src="./assets/Project-1-Portfolio-Img.png"
                             alt="Screenshot of 'Horoscopes for you' home page" />
                         <!-- Add more photos of game -->
@@ -373,7 +348,7 @@
                         <!-- END .hover-items -->
                     </div>
                     <!-- END .project-image .p4-image -->
-                    <div class="text-container">
+                    <div class="text-container" data-aos="flip-right" data-aos-delay="100" data-aos-duration="1000">
                         <div class="description">
                             <h3>Boat Ride Adventures</h3>
                             <p>A fake cruise site so nice you, you make be tempted to go! PSD conversion for luxury
