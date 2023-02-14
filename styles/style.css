@@ -857,6 +857,7 @@ section {
 .portfolio-item .project-image {
   position: relative;
   width: 45%;
+  min-width: 320px;
 }
 .portfolio-item .project-image img {
   max-width: 100%;
