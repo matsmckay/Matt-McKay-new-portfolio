@@ -625,11 +625,11 @@ section {
   pointer-events: none;
 }
 
-.about-container, .about-skills {
+.about-container, .skills-container {
   padding-top: 3.5rem;
   margin-top: 1.5rem;
 }
-.about-container .about-item, .about-skills .about-item {
+.about-container .about-item, .skills-container .about-item {
   border: 1px solid #12181b;
   border-radius: 5px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -637,7 +637,7 @@ section {
   -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.about-container .about-item:hover, .about-skills .about-item:hover {
+.about-container .about-item:hover, .skills-container .about-item:hover {
   cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -660,6 +660,17 @@ section {
   padding: 1rem;
   color: #dbe1e8;
 }
+.about-info p a {
+  color: #2292A4;
+  text-transform: capitalize;
+}
+.about-info p a:hover {
+  color: #D96C06;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 .about-info h4 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -672,86 +683,17 @@ section {
   padding-bottom: 10px;
 }
 
-.left-about {
-  padding-right: 5rem;
-}
-
-.about-skills {
+.skills-container {
   padding-bottom: 4rem;
 }
-.about-skills .progress-bars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-.about-skills .progress-bars .progress-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.about-skills .progress-bars .progress-bar .prog-title {
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about-skills .progress-bars .progress-bar .progress-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.about-skills .progress-bars .progress-bar .progress-con .prog-text {
-  color: #b2becd;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress {
-  width: 100%;
-  height: 0.45rem;
-  background-color: #2a2e35;
-  margin-left: 1rem;
-  position: relative;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #2292A4;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  width: 60%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .html {
-  width: 45%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .css {
-  width: 46%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .javascript {
-  width: 30%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .react {
-  width: 25%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .restApi {
-  width: 20%;
-}
-.about-skills .progress-bars .progress-bar .progress-con .progress .firebase {
-  width: 10%;
-}
-
-.stat-title {
+.skills-container .skills-title {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   padding-top: 10px;
   position: relative;
 }
-.stat-title::before {
+.skills-container .skills-title::before {
   content: "";
   left: 50%;
   position: absolute;
@@ -762,6 +704,43 @@ section {
   background-color: #12181b;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.skills-container .tech-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills-container .tech-container .tech {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills-container .tech-container .tech:hover {
+  color: #D96C06;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .timeline {
@@ -966,14 +945,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
-.links a p:hover {
-  color: #D96C06;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.links a i:hover {
+.links a:hover {
   color: #D96C06;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

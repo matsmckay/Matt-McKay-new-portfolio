@@ -105,12 +105,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        p:hover{
-            color: variables.$quarternary;
-            transform: scale(1.1);
-            transition: all .4s ease-in-out;
-        }
-        i:hover{
+        &:hover{
             color: variables.$quarternary;
             transform: scale(1.1);
             transition: all .4s ease-in-out;
