@@ -2,7 +2,7 @@
 
 // About
 
-.about-container, .skills-container{
+.about-container, .skills-container, .icons-container{
     padding-top: 3.5rem;
     margin-top: 1.5rem;
     .about-item {
@@ -16,6 +16,14 @@
             border: 1px solid variables.$secondary;
             box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
         }
+    }
+}
+
+.icons-container{
+    .contact-icon{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
     }
 }
 
