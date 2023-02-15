@@ -42,6 +42,11 @@
                 font-size: 1.5rem;
                 color: variables.$white;
                 margin-bottom: 1.5rem;
+                &:hover{
+                    color: variables.$quarternary;
+                    transform: scale(1.1);
+                    transition: all .4s ease-in-out;
+                }
             }
         }
     }    
@@ -86,6 +91,12 @@
     h3{
         border-bottom: solid 4px variables.$tertiary;
         display: inline-block;
+        cursor: pointer;
+        &:hover {
+            color: variables.$secondary;
+            transform: scale(1.05);
+            transition: all .4s ease-in-out;
+        }
     }
     p{
         margin: 10px 0;
