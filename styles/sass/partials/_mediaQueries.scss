@@ -8,7 +8,6 @@
         top: 9%;
         right: 4%;
     }
-    
     .header-content{
         flex-direction: column;
         align-items: center;
@@ -28,7 +27,40 @@
             padding-top: 15px;
         }
     }
+    .wrapper{
+        h2{
+            font-size: 3rem;
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
+    }
+    .about{
+        width: 95%;
+        .about-container, .skills-container{
+            padding-top: 0;
+            .tech-container{
+                width: 100%;
+            .tech{
+                    flex-basis: 30%;
+                    margin: 10px;
+                    padding: 10px;
+                    
+                    p{
+                        line-height: 1.2rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .about-info p {
+        line-height: 1.5;
+    }
+    
+}
 
+@media (max-width: 600px) {
     .controls{
         top: 0;
         bottom: auto;

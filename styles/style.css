@@ -347,8 +347,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-bottom: 15px;
 }
 
 .main-btn {
@@ -679,11 +680,11 @@ header {
   pointer-events: none;
 }
 
-.about-container, .skills-container, .icons-container {
+.about-container, .skills-container {
   padding-top: 3.5rem;
   margin-top: 1.5rem;
 }
-.about-container .about-item, .skills-container .about-item, .icons-container .about-item {
+.about-container .about-item, .skills-container .about-item {
   border: 1px solid #12181b;
   border-radius: 5px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -691,13 +692,16 @@ header {
   -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.about-container .about-item:hover, .skills-container .about-item:hover, .icons-container .about-item:hover {
+.about-container .about-item:hover, .skills-container .about-item:hover {
   cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   border: 1px solid #2292A4;
   -webkit-box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
           box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.about-container .about-item .icons-container, .skills-container .about-item .icons-container {
+  padding-top: 1.5rem;
 }
 
 .icons-container .contact-icon {
@@ -706,7 +710,10 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
 }
 .icons-container .contact-icon i {
   font-size: 2rem;
@@ -749,11 +756,6 @@ header {
   text-transform: uppercase;
   text-align: center;
   padding-top: 10px;
-}
-.about-info .btn-con {
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding-bottom: 10px;
 }
 
 .skills-container {
@@ -1199,6 +1201,36 @@ header {
   .header-content .left-header {
     padding-top: 15px;
   }
+  .wrapper h2 {
+    font-size: 3rem;
+  }
+  .wrapper h2 .bg-text {
+    font-size: 4rem;
+  }
+  .about {
+    width: 95%;
+  }
+  .about .about-container, .about .skills-container {
+    padding-top: 0;
+  }
+  .about .about-container .tech-container, .about .skills-container .tech-container {
+    width: 100%;
+  }
+  .about .about-container .tech-container .tech, .about .skills-container .tech-container .tech {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .about .about-container .tech-container .tech p, .about .skills-container .tech-container .tech p {
+    line-height: 1.2rem;
+    text-align: center;
+  }
+  .about-info p {
+    line-height: 1.5;
+  }
+}
+@media (max-width: 600px) {
   .controls {
     top: 0;
     bottom: auto;

@@ -2,7 +2,7 @@
 
 // About
 
-.about-container, .skills-container, .icons-container{
+.about-container, .skills-container{
     padding-top: 3.5rem;
     margin-top: 1.5rem;
     .about-item {
@@ -16,6 +16,13 @@
             border: 1px solid variables.$secondary;
             box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
         }
+        .icons-container{
+            padding-top: 1.5rem;
+            // .btn-con {
+            //     align-self: center;
+            //     padding-bottom: 10px;
+            // }
+        }
     }
 }
 
@@ -23,7 +30,8 @@
     .contact-icon{
         display: flex;
         justify-content: space-around;
-        padding: 1rem;
+        align-items: center;
+        margin: 1rem;
         i{
             font-size: 2.0rem;
             &:hover {
@@ -57,15 +65,8 @@
             text-transform: uppercase;
             text-align: center;
             padding-top: 10px;
-    }
-    .btn-con{
-        align-self: center;
-        padding-bottom: 10px;
-    }
-    
+    } 
 }
-
-
 .skills-container{
     padding-bottom: 4rem;
     .skills-title{
@@ -73,19 +74,7 @@
         text-transform: uppercase;
         text-align: center;
         padding-top: 10px;
-        // padding: 3.5rem 0;
         position: relative;
-        // &::before{
-        //     content: '';
-        //     left: 50%;
-        //     position: absolute;
-        //     z-index: -1;
-        //     top: 0;
-        //     width: 40%;
-        //     height: 10px;
-        //     background-color: variables.$grey-5;
-        //     transform: translateX(-50%);
-        // }
     }    
     .tech-container{
         display: flex;
@@ -106,58 +95,5 @@
                 transition: all .4s ease-in-out;
             }
         }
-    }
-    
-
-    
+    }   
 }
-
-
-// About Timeline
-
-// .timeline{
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     grid-gap: 2rem;
-//     padding-bottom: 3rem;
-//     .timeline-item{
-//         position: relative;
-//         padding-left: 3rem;
-//         border-left: 1px solid variables.$grey-5;
-//         .tl-icon{
-//             position: absolute;
-//             left: -27px;
-//             top: 0;
-//             background-color: variables.$secondary;
-//             width: 50px;
-//             height: 50px;
-//             border-radius: 50%;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             i{
-//                 font-size: 1.3rem;
-//             }
-//         }    
-//         .tl-duration{
-//             padding: .2rem .6rem;
-//             background-color: variables.$grey-5;
-//             border-radius: 15px;
-//             display: inline-block;
-//             font-size: .8rem;
-//             text-transform: uppercase;
-//             font-weight: 500;
-//         }
-//         h5{
-//             padding: 1rem 0;
-//             text-transform: uppercase;
-//             font-size: 1.3rem;
-//             font-weight: 600;
-//             span{
-//                 color: variables.$grey-2;
-//                 font-weight: 500;
-//                 font-size: 1.2rem;
-//             }
-//         }
-//     }
-// }
