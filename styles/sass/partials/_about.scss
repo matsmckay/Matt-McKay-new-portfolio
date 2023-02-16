@@ -27,6 +27,8 @@
 }
 
 .icons-container{
+    display: flex;
+    flex-direction: column;
     .contact-icon{
         display: flex;
         justify-content: space-around;
