@@ -1167,3 +1167,103 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+
+@media (max-width: 600px) {
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+    top: 9%;
+    right: 4%;
+  }
+  .header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 80px;
+  }
+  .header-content .right-header {
+    padding-top: 20px;
+    width: 75%;
+  }
+  .header-content .right-header .name {
+    font-size: 2rem;
+  }
+  .header-content .right-header p {
+    margin: 0.75rem 0;
+    line-height: 1.5rem;
+  }
+  .header-content .left-header {
+    padding-top: 15px;
+  }
+  .controls {
+    top: 0;
+    bottom: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    background-color: #12181b;
+  }
+  .controls .control {
+    margin: 1rem 0.5rem;
+  }
+}
+@media (max-width: 490px) {
+  .header-content .left-header .h-shape {
+    display: none;
+  }
+  .header-content .left-header .image {
+    margin-left: 1.5rem;
+  }
+  .theme-btn {
+    right: 5.25%;
+    width: 40px;
+    height: 40px;
+  }
+  .theme-btn i {
+    font-size: 1rem;
+  }
+  .controls .control {
+    height: 40px;
+    width: 40px;
+  }
+  .controls .control i {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .header-content {
+    margin-top: 80px;
+  }
+  .header-content .right-header {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .header-content .right-header .name {
+    font-size: 1.5rem;
+  }
+  .header-content .right-header p {
+    margin: 0.75rem 0;
+  }
+  .header-content .left-header {
+    padding-top: 50px;
+  }
+  .header-content .left-header .image {
+    width: 100%;
+    margin-left: 0;
+  }
+  .theme-btn {
+    top: 6.9%;
+    right: 44.5%;
+    width: 40px;
+    height: 40px;
+  }
+}
