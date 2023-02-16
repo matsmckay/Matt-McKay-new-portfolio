@@ -17,6 +17,7 @@ $br-sm-2: 14px;
 $box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 
 :root {
+    --color-font-header: #{$white};
     --color-page-background: #{$primary};
     --color-page-text: #{$grey-1};
     --color-main-bg-text: #{$grey-5};
@@ -26,6 +27,7 @@ $box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
+    --color-font-header: #{black};
     --color-page-background: #{$white};
     --color-page-text: #{$grey-4};
     --color-main-bg-text: #{$grey-1};

@@ -75,17 +75,17 @@
         padding-top: 10px;
         // padding: 3.5rem 0;
         position: relative;
-        &::before{
-            content: '';
-            left: 50%;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            width: 40%;
-            height: 1px;
-            background-color: variables.$grey-5;
-            transform: translateX(-50%);
-        }
+        // &::before{
+        //     content: '';
+        //     left: 50%;
+        //     position: absolute;
+        //     z-index: -1;
+        //     top: 0;
+        //     width: 40%;
+        //     height: 10px;
+        //     background-color: variables.$grey-5;
+        //     transform: translateX(-50%);
+        // }
     }    
     .tech-container{
         display: flex;

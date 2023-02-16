@@ -1,4 +1,5 @@
 :root {
+  --color-font-header: #ffffff;
   --color-page-background: #191d2b;
   --color-page-text: #dbe1e8;
   --color-main-bg-text: #12181b;
@@ -8,6 +9,7 @@
 }
 
 .light-mode {
+  --color-font-header: black;
   --color-page-background: #ffffff;
   --color-page-text: #2a2e35;
   --color-main-bg-text: #dbe1e8;
@@ -24,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #191d2b;
+  background-color: var(--color-page-background);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-main-text);
@@ -339,7 +341,6 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 18rem;
-  background-color: var(--color-page-background);
 }
 
 .btn-con {
@@ -481,7 +482,7 @@ img:hover {
 
 header {
   height: 100vh;
-  color: #ffffff;
+  color: var(--color-font-header);
   overflow: hidden;
 }
 
@@ -762,18 +763,6 @@ header {
   text-align: center;
   padding-top: 10px;
   position: relative;
-}
-.skills-container .skills-title::before {
-  content: "";
-  left: 50%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  width: 40%;
-  height: 1px;
-  background-color: #12181b;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 .skills-container .tech-container {
   display: -webkit-box;

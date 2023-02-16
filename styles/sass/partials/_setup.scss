@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-    background-color: variables.$primary;
+    background-color: var(--color-page-background);
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
     color: var(--color-main-text);
