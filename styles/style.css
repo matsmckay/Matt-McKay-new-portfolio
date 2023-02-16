@@ -330,7 +330,7 @@ img {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -340,7 +340,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 0;
 }
 
 .btn-con {
@@ -449,7 +449,7 @@ img:hover {
 
 .theme-btn {
   top: 5%;
-  right: 3%;
+  right: 1%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -487,8 +487,9 @@ header {
 }
 
 .header-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
 }
 .header-content .left-header {
@@ -499,6 +500,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  width: 86%;
 }
 .header-content .left-header .h-shape {
   -webkit-transition: all 0.4s ease-in-out;
@@ -516,8 +518,8 @@ header {
 .header-content .left-header .image {
   border-radius: 14px;
   height: 90%;
-  width: 68%;
-  margin-left: 4rem;
+  width: 80%;
+  margin-left: 3rem;
   background-color: #000;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -547,7 +549,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 18rem;
+  width: 72%;
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -629,7 +631,7 @@ header {
   position: fixed;
   z-index: 10;
   top: 50%;
-  right: 3%;
+  right: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,59 +802,6 @@ header {
           transform: scale(1.1);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.timeline {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  padding-bottom: 3rem;
-}
-.timeline .timeline-item {
-  position: relative;
-  padding-left: 3rem;
-  border-left: 1px solid #12181b;
-}
-.timeline .timeline-item .tl-icon {
-  position: absolute;
-  left: -27px;
-  top: 0;
-  background-color: #2292A4;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.timeline .timeline-item .tl-icon i {
-  font-size: 1.3rem;
-}
-.timeline .timeline-item .tl-duration {
-  padding: 0.2rem 0.6rem;
-  background-color: #12181b;
-  border-radius: 15px;
-  display: inline-block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.timeline .timeline-item h5 {
-  padding: 1rem 0;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-.timeline .timeline-item h5 span {
-  color: #b2becd;
-  font-weight: 500;
-  font-size: 1.2rem;
 }
 
 .port-text {

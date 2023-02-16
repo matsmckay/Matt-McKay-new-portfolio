@@ -8,14 +8,15 @@ header {
 
 // Header-content
 .header-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     height: 100%;
 
     .left-header {
         display: flex;
         align-items: center;
         position: relative;
+        width: 86%;
+        
 
         .h-shape {
             transition: all .4s ease-in-out;
@@ -32,8 +33,8 @@ header {
         .image {
             border-radius: variables.$br-sm-2;
             height: 90%;
-            width: 68%;
-            margin-left: 4rem;
+            width: 80%;
+            margin-left: 3rem;
             background-color: variables.$black;
             transition: all .4s ease-in-out;
             img {
@@ -52,7 +53,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+        width: 72%;
 
         .name {
             font-size: 3rem;
