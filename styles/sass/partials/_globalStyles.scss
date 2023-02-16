@@ -1,10 +1,22 @@
 @use "./variables";
 
 // Independent components
+
+
 .wrapper {
     max-width: 1260px;
     width: 90%;
     margin: 0 auto;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+    background-color: var(--color-page-background);
 }
 
 .btn-con {
@@ -88,7 +100,7 @@ img {
             position: absolute;
             top: 50%;
             left: 50%;
-            color: variables.$grey-5;
+            color: var(--color-main-bg-text);
             transition: all .4s ease-in-out;
             z-index: -1;
             transform: translate(-50%, -50%);
@@ -121,3 +133,4 @@ img {
         pointer-events: none;
     }
 }
+

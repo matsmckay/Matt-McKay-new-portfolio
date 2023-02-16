@@ -15,3 +15,22 @@ $grey-4: #2a2e35;
 $grey-5: #12181b;
 $br-sm-2: 14px;
 $box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+
+:root {
+    --color-page-background: #{$primary};
+    --color-page-text: #{$grey-1};
+    --color-main-bg-text: #{$grey-5};
+    --color-main-text: #{$white};
+    --color-blog-text: #{$grey-2};
+    --color-blog-bg-text: #{$grey-5};
+}
+
+.light-mode {
+    --color-page-background: #{$white};
+    --color-page-text: #{$grey-4};
+    --color-main-bg-text: #{$grey-1};
+    --color-main-text: #{$black};
+    --color-blog-text: #{$grey-5};
+    --color-blog-bg-text: #{$grey-2};
+    //figure out why p is white everywhere
+}

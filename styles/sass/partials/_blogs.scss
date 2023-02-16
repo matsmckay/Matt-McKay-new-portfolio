@@ -9,7 +9,7 @@
     margin-top: 3rem;
     .blog{
         position: relative;
-        background-color: variables.$grey-5;
+        background-color: var(--color-blog-bg-text);
         border-radius: 5px;
         box-shadow: 1px 1px 20px rgba(0,0,0,.1);
         transition: all .4s ease-in-out;
@@ -46,7 +46,7 @@
             }
         }
         p{
-            color: variables.$grey-2;
+            color: var(--color-blog-text);
             line-height: 2rem;
             padding-bottom: 0.5rem;
         }

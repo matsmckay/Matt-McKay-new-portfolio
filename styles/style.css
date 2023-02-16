@@ -1,3 +1,21 @@
+:root {
+  --color-page-background: #191d2b;
+  --color-page-text: #dbe1e8;
+  --color-main-bg-text: #12181b;
+  --color-main-text: #ffffff;
+  --color-blog-text: #b2becd;
+  --color-blog-bg-text: #12181b;
+}
+
+.light-mode {
+  --color-page-background: #ffffff;
+  --color-page-text: #2a2e35;
+  --color-main-bg-text: #dbe1e8;
+  --color-main-text: #000;
+  --color-blog-text: #12181b;
+  --color-blog-bg-text: #b2becd;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -9,7 +27,7 @@ body {
   background-color: #191d2b;
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: var(--color-main-text);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -314,6 +332,16 @@ img {
   margin: 0 auto;
 }
 
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+  background-color: var(--color-page-background);
+}
+
 .btn-con {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,7 +436,7 @@ img:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #12181b;
+  color: var(--color-main-bg-text);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   z-index: -1;
@@ -531,21 +559,11 @@ header {
   line-height: 2rem;
 }
 
-section {
-  min-height: 100vh;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 3rem 18rem;
-}
-
 .section {
   -webkit-transform: translateY(-100%) scale(0);
           transform: translateY(-100%) scale(0);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background-color: #191d2b;
 }
 
 .sec1 {
@@ -710,7 +728,7 @@ section {
 .about-info p {
   line-height: 2rem;
   padding: 1rem;
-  color: #dbe1e8;
+  color: var(--color-page-text);
 }
 .about-info p a {
   color: #2292A4;
@@ -1028,7 +1046,7 @@ section {
 }
 .blogs .blog {
   position: relative;
-  background-color: #12181b;
+  background-color: var(--color-blog-bg-text);
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -1078,7 +1096,7 @@ section {
   color: #2292A4;
 }
 .blogs .blog p {
-  color: #b2becd;
+  color: var(--color-blog-text);
   line-height: 2rem;
   padding-bottom: 0.5rem;
 }

@@ -41,7 +41,7 @@
     p {
         line-height: 2rem;
         padding: 1rem;
-        color: variables.$grey-1;
+        color: var(--color-page-text);
         a{
             color: variables.$secondary;
             text-transform: capitalize;
