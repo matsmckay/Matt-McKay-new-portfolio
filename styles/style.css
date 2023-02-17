@@ -723,6 +723,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem;
+  padding-bottom: 2rem;
 }
 .icons-container .contact-icon i {
   font-size: 2rem;
@@ -816,7 +817,8 @@ header {
 }
 
 .port-text {
-  padding: 2rem 0;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -1236,10 +1238,39 @@ header {
     text-align: center;
   }
   .about-info p {
-    line-height: 1.5;
+    line-height: 1.5rem;
   }
   .main-title {
-    padding-top: 80px;
+    padding-top: 3rem;
+  }
+  .portfolio-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .portfolio-item .project-image {
+    width: 80%;
+  }
+  .portfolio-item .text-container {
+    width: 80%;
+  }
+  .portfolio-item .text-container .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-item .text-container .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 600px) {
@@ -1258,6 +1289,18 @@ header {
   }
   .controls .control {
     margin: 1rem 0.5rem;
+  }
+  .main-title {
+    padding-top: 125px;
+  }
+  .portfolios .portfolio-item .project-image {
+    width: 100%;
+  }
+  .portfolios .portfolio-item .text-container {
+    width: 100%;
+  }
+  .port-text {
+    padding-top: 4rem;
   }
 }
 @media (max-width: 490px) {
@@ -1284,6 +1327,19 @@ header {
   }
   .main-btn .btn-text {
     padding: 0 10px;
+  }
+  .description h3 {
+    font-size: 0.9rem;
+  }
+  .icons .icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 0.65rem;
+  }
+  .icons .icon i {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0 1rem;
   }
 }
 @media (max-width: 400px) {
@@ -1315,5 +1371,17 @@ header {
   }
   .about-info p {
     text-align: justify;
+  }
+  .tech-title {
+    font-size: 0.7rem;
+  }
+  .icons-container .contact-icon i {
+    font-size: 1.5rem;
+  }
+  .sec3 h2 {
+    font-size: 2rem;
+  }
+  .sec3 .wrapper .main-title .bg-text {
+    font-size: 2.5rem;
   }
 }

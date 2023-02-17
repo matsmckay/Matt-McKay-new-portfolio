@@ -41,26 +41,43 @@
             padding-top: 0;
             .tech-container{
                 width: 100%;
-                .tech{
-                        flex-basis: 30%;
-                        margin: 10px;
-                        padding: 5px;
-                        
-                        p{
-                            line-height: 1.2rem;
-                            text-align: center;
-                        }
+            .tech{
+                    flex-basis: 30%;
+                    margin: 10px;
+                    padding: 5px;
+                    
+                    p{
+                        line-height: 1.2rem;
+                        text-align: center;
                     }
+                }
             }
         }
     }
     .about-info p {
-        line-height: 1.5;
+        line-height: 1.5rem;
     }
     .main-title{
-        padding-top: 80px;
+        padding-top: 3rem;
+    }  
+    .portfolio-item{
+        flex-direction: column-reverse;
+        .project-image{
+            width: 80%;
+        }
+        .text-container{
+            width: 80%;
+            .description{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .links{
+                justify-content: center;
+            }
+        }
+
     }
-    
 }
 
 @media (max-width: 600px) {
@@ -75,6 +92,21 @@
         .control{
             margin: 1rem .5rem;
         }
+    }
+    .main-title{
+        padding-top: 125px;
+    }
+    .portfolios .portfolio-item {
+        .project-image{
+            width: 100%;
+        }
+        .text-container{
+            width: 100%;
+        }
+        
+    } 
+    .port-text{
+        padding-top: 4rem;
     }
 }
 
@@ -112,6 +144,22 @@
     .main-btn .btn-text{
         padding: 0 10px;
     }
+
+    .description h3 {
+        font-size: 0.9rem;
+    }
+
+        .icons .icon{
+                width: 35px;
+                height: 35px;
+                margin: 0 0.65rem;
+                i {
+                    font-size: 1rem;
+                    color: variables.$white;
+                    margin: 0 1rem;
+                }
+            }
+        
 }
 
 @media (max-width: 400px){
@@ -144,5 +192,18 @@
         }
         .about-info p {
             text-align: justify;
+        }
+        .tech-title{
+            font-size: 0.7rem;
+        }
+        .icons-container .contact-icon i{
+            font-size: 1.5rem;
+        }
+
+        .sec3 h2 {
+            font-size: 2rem;
+        }
+        .sec3 .wrapper .main-title .bg-text {
+            font-size: 2.5rem;
         }
 }
