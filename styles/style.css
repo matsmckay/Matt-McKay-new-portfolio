@@ -1051,6 +1051,13 @@ header {
   line-height: 2rem;
   padding-bottom: 0.5rem;
 }
+.blogs .blog a:hover {
+  color: #BDBF09;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 
 .contact-content-con {
   display: -webkit-box;
