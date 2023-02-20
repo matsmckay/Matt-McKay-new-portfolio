@@ -1072,30 +1072,6 @@ header {
   margin: 1rem 0;
   line-height: 2rem;
 }
-.contact-content-con .left-contact .contact-info .contact-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.contact-content-con .left-contact .contact-info p {
-  margin: 0.3rem 0;
-  padding: 0;
-}
-.contact-content-con .left-contact .contact-info i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.3rem;
-}
 .contact-content-con .left-contact .contact-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1285,10 +1261,29 @@ header {
   .blogs .blog p {
     line-height: 1.25rem;
   }
+  .contact-content-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 1rem;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+  }
+  .contact-content-con .left-contact h4 {
+    text-align: center;
+  }
 }
 @media (max-width: 750px) {
   .blogs {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-content-con {
+    padding-top: 2.25rem;
   }
 }
 @media (max-width: 600px) {
@@ -1319,6 +1314,11 @@ header {
   }
   .port-text {
     padding-top: 4rem;
+  }
+  .contact-content-con .right-contact .submit-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 490px) {
@@ -1358,6 +1358,27 @@ header {
     font-size: 1rem;
     color: #ffffff;
     margin: 0 1rem;
+  }
+  .contact-content-con {
+    padding-top: 1rem;
+  }
+  .contact-content-con .left-contact h4 {
+    font-size: 1.75rem;
+  }
+  .contact-content-con .left-contact p {
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+  }
+  .contact-content-con .right-contact .input-control {
+    margin: 0.75rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 0.8rem;
   }
 }
 @media (max-width: 400px) {

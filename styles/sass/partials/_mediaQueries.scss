@@ -35,6 +35,8 @@
             }
         }
     }
+
+// ABOUT SECTION 
     .about{
         width: 95%;
         .about-container, .skills-container{
@@ -59,6 +61,8 @@
     .main-title{
         padding-top: 3rem;
     }  
+
+// PORTFOLIO SECTION 
     .portfolio-item{
         flex-direction: column-reverse;
         .project-image{
@@ -77,6 +81,8 @@
         }
     }
 
+// BLOG SECTION
+
     .blogs {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: .25rem;
@@ -90,12 +96,36 @@
             }
         }
     }
+
+// FORM SECTION
+    .contact-content-con {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 1rem;
+        .right-contact{
+            margin-left: 0;
+        }
+        .left-contact{
+            h4{
+                text-align: center;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 750px) {
     .blogs {
             grid-template-columns: repeat(1, 1fr);
         }
+
+        .contact-content-con {
+            padding-top: 2.25rem;
+        }
+
+        // .sec5 .contact-container .main-title h2{
+        //     font-size: 3rem;
+        // }
 }
 
 
@@ -126,6 +156,10 @@
     } 
     .port-text{
         padding-top: 4rem;
+    }
+
+    .contact-content-con .right-contact .submit-btn {
+        justify-content: center;
     }
 }
 
@@ -168,17 +202,42 @@
         font-size: 0.9rem;
     }
 
-        .icons .icon{
-                width: 35px;
-                height: 35px;
-                margin: 0 0.65rem;
-                i {
-                    font-size: 1rem;
-                    color: variables.$white;
-                    margin: 0 1rem;
+    .icons .icon{
+            width: 35px;
+            height: 35px;
+            margin: 0 0.65rem;
+            i {
+                font-size: 1rem;
+                color: variables.$white;
+                margin: 0 1rem;
+            }
+    }
+
+    .contact-content-con{
+        padding-top: 1rem;
+        .left-contact{
+            h4 {
+                font-size: 1.75rem;
+            }
+
+            p {
+                margin: 0.5rem 0;
+                line-height: 1.5rem;
+            }
+        }
+        .right-contact{
+            .input-control{
+            margin: 0.75rem 0;
+            flex-direction: column;
+            }
+            .i-c-2{
+                :last-child {
+                    margin-left: 0;
+                    margin-top: 0.8rem;
                 }
             }
-        
+        }
+    }   
 }
 
 @media (max-width: 400px){
