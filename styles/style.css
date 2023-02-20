@@ -1272,6 +1272,24 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.25rem;
+  }
+  .blogs .blog {
+    width: 90%;
+  }
+  .blogs .blog h4 {
+    font-size: 1.25rem;
+  }
+  .blogs .blog p {
+    line-height: 1.25rem;
+  }
+}
+@media (max-width: 750px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media (max-width: 600px) {
   .controls {
@@ -1383,5 +1401,8 @@ header {
   }
   .sec3 .wrapper .main-title .bg-text {
     font-size: 2.5rem;
+  }
+  .blogs-content .blogs .blog img {
+    height: 200px;
   }
 }
