@@ -6,7 +6,7 @@
         width: 50px;
         height: 50px;
         top: 9%;
-        right: 4%;
+        left: 4%;
     }
     .header-content{
         flex-direction: column;
@@ -131,6 +131,13 @@
 
 
 @media (max-width: 600px) {
+    header {
+            height: 100%;
+            .header-content .left-header .h-shape {
+                display: none;
+            }
+    }
+    
     .controls{
         top: 0;
         bottom: auto;
@@ -167,9 +174,6 @@
     
     .header-content{
         .left-header {
-            .h-shape{
-                display: none;
-            }
             .image{
                 margin-left: 1.5rem;
             }
@@ -177,7 +181,8 @@
     }
     
     .theme-btn{
-        right: 5.25%;
+        top: 15%;
+        left: 2.25%;
         width: 40px;
         height: 40px;
         i {
@@ -263,13 +268,12 @@
             }
         }
         .theme-btn {
-            top: 10%;
             right: 44.5%;
             width: 40px;
             height: 40px;
         }
         .about-info p {
-            text-align: justify;
+            font-size: 0.8rem;
         }
         .tech-title{
             font-size: 0.7rem;

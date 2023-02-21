@@ -450,7 +450,7 @@ img:hover {
 
 .theme-btn {
   top: 5%;
-  right: 1%;
+  left: 1%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -1169,7 +1169,7 @@ header {
     width: 50px;
     height: 50px;
     top: 9%;
-    right: 4%;
+    left: 4%;
   }
   .header-content {
     -webkit-box-orient: vertical;
@@ -1294,6 +1294,12 @@ header {
   }
 }
 @media (max-width: 600px) {
+  header {
+    height: 100%;
+  }
+  header .header-content .left-header .h-shape {
+    display: none;
+  }
   .controls {
     top: 0;
     bottom: auto;
@@ -1329,14 +1335,12 @@ header {
   }
 }
 @media (max-width: 490px) {
-  .header-content .left-header .h-shape {
-    display: none;
-  }
   .header-content .left-header .image {
     margin-left: 1.5rem;
   }
   .theme-btn {
-    right: 5.25%;
+    top: 15%;
+    left: 2.25%;
     width: 40px;
     height: 40px;
   }
@@ -1410,13 +1414,12 @@ header {
     margin-left: 0;
   }
   .theme-btn {
-    top: 10%;
     right: 44.5%;
     width: 40px;
     height: 40px;
   }
   .about-info p {
-    text-align: justify;
+    font-size: 0.8rem;
   }
   .tech-title {
     font-size: 0.7rem;
