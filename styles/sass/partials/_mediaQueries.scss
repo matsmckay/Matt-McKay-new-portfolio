@@ -2,6 +2,10 @@
 
 @media (max-width: 975px) {
     
+    body header {
+            height: 100%;
+        }
+
     .theme-btn{
         width: 50px;
         height: 50px;
@@ -117,10 +121,7 @@
 }
 
 @media (max-width: 750px) {
-    body header {
-        height: 100%;
-    }
-    
+
     .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
