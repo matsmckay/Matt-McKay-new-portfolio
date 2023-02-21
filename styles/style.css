@@ -1427,10 +1427,10 @@ header {
   .icons-container .contact-icon i {
     font-size: 1.5rem;
   }
-  .sec3 h2 {
+  section .wrapper h2 {
     font-size: 2rem;
   }
-  .sec3 .wrapper .main-title .bg-text {
+  section .wrapper .main-title .bg-text {
     font-size: 2.5rem;
   }
   .blogs-content .blogs .blog img {
