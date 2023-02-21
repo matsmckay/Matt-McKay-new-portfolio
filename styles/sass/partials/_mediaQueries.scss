@@ -40,7 +40,7 @@
     .about{
         width: 95%;
         .about-container, .skills-container{
-            padding-top: 0;
+            // padding-top: 0;
             .tech-container{
                 width: 100%;
             .tech{
@@ -101,9 +101,11 @@
     .contact-content-con {
         display: flex;
         flex-direction: column-reverse;
-        margin: 1rem;
         .right-contact{
             margin-left: 0;
+            .submit-btn{
+                justify-content: center;
+            }
         }
         .left-contact{
             h4{
@@ -116,26 +118,22 @@
 
 @media (max-width: 750px) {
     .blogs {
-            grid-template-columns: repeat(1, 1fr);
-        }
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-        .contact-content-con {
-            padding-top: 2.25rem;
-        }
-
-        // .sec5 .contact-container .main-title h2{
-        //     font-size: 3rem;
-        // }
+    .contact-content-con {
+        padding-top: 2.25rem;
+    }
 }
 
 
 
 @media (max-width: 600px) {
     header {
-            height: 100%;
-            .header-content .left-header .h-shape {
-                display: none;
-            }
+        width: 100%;
+        .header-content .left-header .h-shape {
+            display: none;
+        }
     }
     
     .controls{

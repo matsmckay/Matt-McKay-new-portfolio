@@ -817,7 +817,7 @@ header {
 }
 
 .port-text {
-  padding-top: 7rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -993,7 +993,8 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
+  padding-top: 3.5rem;
+  margin-top: 1.5rem;
 }
 .blogs .blog {
   position: relative;
@@ -1064,6 +1065,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding-top: 3.5rem;
+  margin-top: 1.5rem;
 }
 .contact-content-con .left-contact {
   -webkit-box-flex: 2;
@@ -1204,9 +1206,6 @@ header {
   .about {
     width: 95%;
   }
-  .about .about-container, .about .skills-container {
-    padding-top: 0;
-  }
   .about .about-container .tech-container, .about .skills-container .tech-container {
     width: 100%;
   }
@@ -1276,10 +1275,14 @@ header {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin: 1rem;
   }
   .contact-content-con .right-contact {
     margin-left: 0;
+  }
+  .contact-content-con .right-contact .submit-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contact-content-con .left-contact h4 {
     text-align: center;
@@ -1295,7 +1298,7 @@ header {
 }
 @media (max-width: 600px) {
   header {
-    height: 100%;
+    width: 100%;
   }
   header .header-content .left-header .h-shape {
     display: none;
