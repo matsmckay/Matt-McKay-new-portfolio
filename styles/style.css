@@ -631,7 +631,7 @@ header {
 .controls {
   position: fixed;
   z-index: 10;
-  top: 50%;
+  top: 60%;
   right: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
