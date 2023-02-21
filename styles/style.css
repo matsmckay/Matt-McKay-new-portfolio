@@ -1289,6 +1289,9 @@ header {
   }
 }
 @media (max-width: 750px) {
+  header {
+    width: 100%;
+  }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1297,9 +1300,6 @@ header {
   }
 }
 @media (max-width: 600px) {
-  header {
-    width: 100%;
-  }
   header .header-content .left-header .h-shape {
     display: none;
   }
