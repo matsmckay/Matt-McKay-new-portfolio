@@ -1289,7 +1289,7 @@ header {
   }
 }
 @media (max-width: 750px) {
-  header {
+  body header {
     height: 100%;
   }
   .blogs {
