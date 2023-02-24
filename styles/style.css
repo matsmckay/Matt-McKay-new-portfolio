@@ -1157,13 +1157,25 @@ header {
 .contact-content-con .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
-.contact-content-con .right-contact .submit-btn {
+.contact-content-con .right-contact .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-content-con .right-contact .button .submit-btn {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: #12181b;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 975px) {

@@ -73,9 +73,21 @@
                 margin-left: 1.5rem;
             }
         }
-        .submit-btn{
+        .button{
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
+            .submit-btn{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: 0.8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: #12181b;
+                color: #ffffff;
+                cursor: pointer;
+            }
         }
     }
 }
