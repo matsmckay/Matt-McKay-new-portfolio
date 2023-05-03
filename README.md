@@ -19,5 +19,6 @@ This is my portfolio website built using JavaScript, Sass, and HTML. The website
 - Projects section featuring a selection of my favorite projects
 - Skills section showcasing my technical skills
 - Experience section detailing my professional experience as a web developer
+- Form for getting in contact with myself
 
 
