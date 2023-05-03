@@ -24,4 +24,4 @@ This is my portfolio website built using JavaScript, Sass, and HTML. The website
 
 ## Live Site URL
 
-- Check out the live site at https://www.matthewmckay.com
+- Check out the live site at https://www.matthewmckay.com 😊
