@@ -561,6 +561,7 @@ header {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  margin-right: 0.75rem;
 }
 
 .section {
@@ -632,7 +633,7 @@ header {
   position: fixed;
   z-index: 10;
   top: 60%;
-  right: 1%;
+  right: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,6 +644,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -664,15 +668,23 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0.7rem 0;
+  margin-top: 0.1rem;
+  margin-bottom: 0.7rem;
   -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+.controls .control span {
+  color: white;
 }
 .controls .control i {
   font-size: 1.2rem;
@@ -1221,16 +1233,19 @@ header {
   .about {
     width: 95%;
   }
-  .about .about-container .tech-container, .about .skills-container .tech-container {
+  .about .about-container .tech-container,
+  .about .skills-container .tech-container {
     width: 100%;
   }
-  .about .about-container .tech-container .tech, .about .skills-container .tech-container .tech {
+  .about .about-container .tech-container .tech,
+  .about .skills-container .tech-container .tech {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     margin: 10px;
     padding: 5px;
   }
-  .about .about-container .tech-container .tech p, .about .skills-container .tech-container .tech p {
+  .about .about-container .tech-container .tech p,
+  .about .skills-container .tech-container .tech p {
     line-height: 1.2rem;
     text-align: center;
   }
@@ -1310,6 +1325,9 @@ header {
   .contact-content-con {
     padding-top: 2.25rem;
   }
+  .controls {
+    right: 2.5%;
+  }
 }
 @media (max-width: 600px) {
   header .header-content .left-header .h-shape {
@@ -1329,7 +1347,7 @@ header {
     background-color: #12181b;
   }
   .controls .control {
-    margin: 1rem 0.5rem;
+    margin: 1rem 1rem;
   }
   .main-title {
     padding-top: 125px;
@@ -1367,7 +1385,10 @@ header {
     width: 40px;
   }
   .controls .control i {
-    font-size: 1rem;
+    display: none;
+  }
+  .controls .control span {
+    font-size: 85%;
   }
   .main-btn .btn-text {
     padding: 0 10px;
@@ -1408,6 +1429,22 @@ header {
   }
 }
 @media (max-width: 400px) {
+  .controls {
+    padding-bottom: 2rem;
+  }
+  .controls .control {
+    margin: 1rem 1.5rem;
+  }
+  .controls .control-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+  }
+  .controls .control-4 {
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+  }
   .header-content {
     margin-top: 80px;
   }

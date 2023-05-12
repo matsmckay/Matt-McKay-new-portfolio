@@ -508,21 +508,39 @@
                     <div class="right-contact">
                         <form action="https://formspree.io/f/xqkoqogg" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" name="name" id="full-name" required placeholder="YOUR NAME">
-                                <input type="email" name="_replyto" id="email-address" required
-                                    placeholder="YOUR EMAIL">
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    id="full-name" 
+                                    required placeholder="YOUR NAME"
+                                >
+                                <input 
+                                    type="email" 
+                                    name="_replyto" 
+                                    id="email-address" 
+                                    required
+                                    placeholder="YOUR EMAIL"
+                                >
                             </div>
                             <div class="input-control">
-                                <input type="text" name="subject" required placeholder="ENTER SUBJECT">
+                                <input 
+                                    type="text" 
+                                    name="subject" 
+                                    required placeholder="ENTER SUBJECT"
+                                >
                             </div>
                             <div class="input-control">
-                                <textarea name="message" id="message" cols="15" rows="8"
-                                    placeholder="Start message here..."></textarea>
+                                <textarea 
+                                    name="message" 
+                                    id="message" 
+                                    cols="15" 
+                                    rows="8"
+                                    placeholder="Start message here...">
+                                </textarea>
                             </div>
                             <div class="button">
                                 <input class="submit-btn" type="submit" value="Submit">
                             </div>
-                            <!-- <button type="submit" class="submit-btn">Send</button> -->
                     </div>
                     </form>
                 </div>
@@ -532,7 +550,7 @@
         </section>
     </main>
 
-    <div class="controls">
+    <!-- <div class="controls">
         <div class="control control-1 active-btn" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
@@ -548,7 +566,31 @@
         <div class="control control-5 " data-id="contact">
             <i class="fa-solid fa-envelope-open"></i>
         </div>
-    </div>
+    </div> -->
+
+    <nav class="controls">
+    <button class="control control-1 active-btn" data-id="home">
+        <span>Home</span>
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+    </button>
+    <button class="control control-2" data-id="about">
+        <span>About</span>
+        <i class="fa-sharp fa-solid fa-user" aria-hidden="true"></i>
+    </button>
+    <button class="control control-3" data-id="portfolio">
+        <span>Portfolio</span>
+        <i class="fas fa-briefcase" aria-hidden="true"></i>
+    </button>
+    <button class="control control-4" data-id="blogs">
+        <span>Blog</span>
+        <i class="fa-solid fa-newspaper" aria-hidden="true"></i>
+    </button>
+    <button class="control control-5" data-id="contact">
+        <span>Contact</span>
+        <i class="fa-solid fa-envelope-open" aria-hidden="true"></i>
+    </button>
+</nav>
+
 
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>

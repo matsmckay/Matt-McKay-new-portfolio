@@ -1,71 +1,70 @@
-@use "./variables";
+@use './variables';
 
 header {
-    height: 100vh;
-    color: var(--color-font-header);
-    overflow: hidden;
+  height: 100vh;
+  color: var(--color-font-header);
+  overflow: hidden;
 }
 
 // Header-content
 .header-content {
+  display: flex;
+  height: 100%;
+
+  .left-header {
     display: flex;
-    height: 100%;
+    align-items: center;
+    position: relative;
+    width: 86%;
 
-    .left-header {
-        display: flex;
-        align-items: center;
-        position: relative;
-        width: 86%;
-        
-
-        .h-shape {
-            transition: all .4s ease-in-out;
-            width: 65%;
-            height: 100%;
-            background-color: variables.$secondary;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            clip-path: polygon(0 0, 62% 0, 43% 100%, 0% 100%);
-        }
-
-        .image {
-            border-radius: variables.$br-sm-2;
-            height: 90%;
-            width: 80%;
-            margin-left: 3rem;
-            background-color: variables.$black;
-            transition: all .4s ease-in-out;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all .4s ease-in-out;
-                filter: grayscale(100%);
-                &:hover {
-                    filter: grayscale(0);
-                }
-            }
-        }
+    .h-shape {
+      transition: all 0.4s ease-in-out;
+      width: 65%;
+      height: 100%;
+      background-color: variables.$secondary;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      clip-path: polygon(0 0, 62% 0, 43% 100%, 0% 100%);
     }
-    .right-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 72%;
 
-        .name {
-            font-size: 3rem;
-
-            span {
-                color: variables.$secondary;
-            }
+    .image {
+      border-radius: variables.$br-sm-2;
+      height: 90%;
+      width: 80%;
+      margin-left: 3rem;
+      background-color: variables.$black;
+      transition: all 0.4s ease-in-out;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease-in-out;
+        filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0);
         }
-        p {
-            margin: 1.5rem 0;
-            line-height: 2rem;
-            ;
-        }
+      }
     }
+  }
+  .right-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 72%;
+
+    .name {
+      font-size: 3rem;
+
+      span {
+        color: variables.$secondary;
+      }
+    }
+    p {
+      margin: 1.5rem 0;
+      line-height: 2rem;
+      margin-right: 0.75rem;
+    }
+  }
 }
