@@ -1,102 +1,109 @@
-@use "./variables";
+@use './variables';
 
 // About
 
-.about-container, .skills-container{
-    padding-top: 3.5rem;
-    margin-top: 1.5rem;
-    .about-item {
-        border: 1px solid variables.$grey-5;
-        border-radius: 5px;
-        transition: all .4s ease-in-out;
-        box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-        &:hover {
-            cursor: default;
-            transform: translateY(-5px);
-            border: 1px solid variables.$secondary;
-            box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-        }
-        .icons-container{
-            padding-top: 1.5rem;
-            // .btn-con {
-            //     align-self: center;
-            //     padding-bottom: 10px;
-            // }
-        }
+.about-container,
+.skills-container {
+  padding-top: 3.5rem;
+  margin-top: 1.5rem;
+  .about-item {
+    border: 1px solid variables.$grey-5;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+    &:hover {
+      cursor: default;
+      transform: translateY(-5px);
+      border: 1px solid variables.$secondary;
+      box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
     }
+    .icons-container {
+      padding-top: 1.5rem;
+      // .btn-con {
+      //     align-self: center;
+      //     padding-bottom: 10px;
+      // }
+    }
+  }
 }
 
-.icons-container{
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  .contact-icon {
     display: flex;
-    flex-direction: column;
-    .contact-icon{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 1rem;
-        padding-bottom: 2rem;
-        i{
-            font-size: 2.0rem;
-            &:hover {
-                color: variables.$tertiary;
-                transform: scale(1.2);
-                transition: all .4s ease-in-out;
-                }
-        }
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    i {
+      font-size: 2rem;
+      &:hover {
+        color: variables.$tertiary;
+        transform: scale(1.2);
+        transition: all 0.4s ease-in-out;
+      }
     }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
 }
 
 .about-info {
-    display: flex;
-    flex-direction: column;
-    p {
-        line-height: 2rem;
-        padding: 1rem;
-        color: var(--color-page-text);
-        a{
-            color: variables.$secondary;
-            text-transform: capitalize;
-            &:hover{
-                color: variables.$quarternary;
-                transform: scale(1.1);
-                transition: all .4s ease-in-out;
-            }
-        }
+  display: flex;
+  flex-direction: column;
+  p {
+    line-height: 2rem;
+    padding: 1rem;
+    color: var(--color-page-text);
+    a {
+      color: variables.$secondary;
+      text-transform: capitalize;
+      &:hover {
+        color: variables.$quarternary;
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+      }
     }
-    h4 {
-            font-size: 2rem;
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 10px;
-    } 
+  }
+  h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+  }
 }
-.skills-container{
-    padding-bottom: 4rem;
-    .skills-title{
-        font-size: 2rem;
-        text-transform: uppercase;
-        text-align: center;
-        padding-top: 10px;
-        position: relative;
-    }    
-    .tech-container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-        .tech{
-            flex-basis: 30%;
-            margin: 10px;
-            padding: 10px;
-            text-transform: uppercase;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            &:hover{
-                color: variables.$quarternary;
-                transform: scale(1.1);
-                transition: all .4s ease-in-out;
-            }
-        }
-    }   
+.skills-container {
+  padding-bottom: 4rem;
+  .skills-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+  }
+  .tech-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .tech {
+      flex-basis: 30%;
+      margin: 10px;
+      padding: 10px;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:hover {
+        color: variables.$quarternary;
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
 }

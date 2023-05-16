@@ -692,11 +692,13 @@ header {
   pointer-events: none;
 }
 
-.about-container, .skills-container {
+.about-container,
+.skills-container {
   padding-top: 3.5rem;
   margin-top: 1.5rem;
 }
-.about-container .about-item, .skills-container .about-item {
+.about-container .about-item,
+.skills-container .about-item {
   border: 1px solid #12181b;
   border-radius: 5px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -704,7 +706,8 @@ header {
   -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.about-container .about-item:hover, .skills-container .about-item:hover {
+.about-container .about-item:hover,
+.skills-container .about-item:hover {
   cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -712,7 +715,8 @@ header {
   -webkit-box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
           box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
-.about-container .about-item .icons-container, .skills-container .about-item .icons-container {
+.about-container .about-item .icons-container,
+.skills-container .about-item .icons-container {
   padding-top: 1.5rem;
 }
 
@@ -746,6 +750,19 @@ header {
           transform: scale(1.2);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+.icons-container .contact-icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .about-info {
@@ -1110,6 +1127,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1152,7 +1174,8 @@ header {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
