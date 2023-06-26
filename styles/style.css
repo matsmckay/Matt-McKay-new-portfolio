@@ -909,6 +909,7 @@ header {
   font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .portfolio-item .project-image .hover-items h3:hover {
   color: #D96C06;
@@ -984,6 +985,10 @@ header {
 .text-container p {
   margin: 10px 0;
   font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+.description a h3 {
+  text-align: center;
 }
 
 .links {
