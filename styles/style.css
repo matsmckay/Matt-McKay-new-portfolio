@@ -741,6 +741,9 @@ header {
   margin: 1rem;
   padding-bottom: 2rem;
 }
+.icons-container .contact-icon .contact-links {
+  padding-right: 1rem;
+}
 .icons-container .contact-icon i {
   font-size: 2rem;
 }
@@ -763,6 +766,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .about-info {
@@ -1359,6 +1363,35 @@ header {
   }
   .controls {
     right: 2.5%;
+  }
+  .contact-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-icon .contact-links {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin: 10px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 600px) {
