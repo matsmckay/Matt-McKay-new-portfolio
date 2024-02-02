@@ -953,11 +953,15 @@ header {
 .icons .icon {
   background-color: #191d2b;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -979,6 +983,13 @@ header {
 }
 .icons .icon:hover i {
   color: #191d2b;
+}
+.icons .icon p {
+  font-size: 0.75rem;
+}
+.icons .icon:hover p {
+  color: #D96C06;
+  font-weight: 600;
 }
 
 .project-image:hover .hover-items {

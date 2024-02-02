@@ -61,9 +61,10 @@
   .icon {
     background-color: variables.$primary;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 0.75rem;
@@ -78,6 +79,15 @@
       background-color: variables.$white;
       i {
         color: variables.$primary;
+      }
+    }
+    p {
+      font-size: 0.75rem;
+    }
+    &:hover {
+      p {
+        color: variables.$quarternary;
+        font-weight: 600;
       }
     }
   }
